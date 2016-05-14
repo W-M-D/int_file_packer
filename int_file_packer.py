@@ -11,6 +11,6 @@ byte_file = open('./bytes.out','a')
 print int_file
 
 for word in int_file:
-    i = struct.pack("Q",int(word))
+    i = struct.pack("i",int(word))
     byte_file.write(i)
     
